@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="tetris" width="400" height="600"></canvas>
+
+        <div id="status">
+            <p>Pontuação: <span id="score">0</span></p>
+            <p>Nível: <span id="level">1</span></p>
+        </div>
+    </div>
+
+    <!-- Modal de Boas-vindas -->
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <h2>Bem-vindo ao Tetris!</h2>
+            <button id="startWelcomeButton">Iniciar Jogo</button>
+        </div>
+    </div>
+
+    
+
+    <!-- Modal de Game Over -->
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <h2>Game Over!</h2>
+            <p>Sua pontuação foi: <span id="finalScore">0</span></p>
+            <button id="restartModalButton">Reiniciar</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
